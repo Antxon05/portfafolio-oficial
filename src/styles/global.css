@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root {
+  --bg-primario: #121212;
+  --color-primario: #1b4332;
+  --color-secundario: #95d5b2;
+  --color-secundario-light: #95d5b2;
+}
+
+body {
+  font-family: "Geologica Variable", sans-serif;
+  background-color: #f9f9f9;
+  color: #1a1a1a;
+}
+
+.bg-primario {
+  background-color: var(--bg-primario);
+}
+
+.bg-secundario {
+  background-color: var(--color-secundario);
+}
+
+.bg-secundario-light {
+  background-color: var(--color-secundario-light);
+}
+
+.txt-primario {
+  color: var(--color-primario);
+}
+
+.txt-secundario {
+  color: var(--color-secundario);
+}
+
+.txt-secundario-hover:hover {
+  color: var(--color-secundario);
+}
+
+.txt-secundario-light {
+  color: var(--color-secundario-light);
+}
+
+.btn-primary {
+  background-color: #1b4332;
+  color: white;
+}

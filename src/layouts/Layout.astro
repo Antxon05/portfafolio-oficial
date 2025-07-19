@@ -1,4 +1,9 @@
 ---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import '@fontsource-variable/geologica';
+import "../styles/global.css";
+
 const {children} = Astro.props;
 ---
 
@@ -10,13 +15,13 @@ const {children} = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Portafolio | Antxón</title>
-		<link rel="stylesheet" href="../styles/styles.css">
 	</head>
 	<body>
-		{children}
+		<Header />
+		<slot />
+		<Footer />
 	</body>
 </html>
-
 <style>
 	html,
 	body {
@@ -24,5 +29,6 @@ const {children} = Astro.props;
 		padding: 0;
 		width: 100%;
 		height: 100%;
+		background-color: #0D1B19	;
 	}
 </style>
